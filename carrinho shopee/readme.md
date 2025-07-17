@@ -1,29 +1,47 @@
-#objetivo
-carrinho shopee
--> itens de compra
--> carrinho com itens escolhidos
+# 🛒 Carrinho Shopee
 
-<anotaçoes>
-carrinh:
-// push serve para adicionar um item ao array ou vetor
-// shift serve para remover o primeiro item do array
-// pop serve para remover o último item do array
-// reduce serve para reduzir o array a um único valor
-// o 0 é o valor inicial do reduce, ou seja, o total começa em 0
-// o total é uma função que retorna o valor total do item, ou seja, o preço
-// indexOf serve para encontrar o índice de um item no array
-// splice serve para remover um item do array
-// findIndex serve para encontrar o índice de um item no array
-// forEach serve para iterar sobre cada item do array ou percorrer o que tem dentro do array
-// quando usamos chaves no cifrão, estamos criando uma expressão no JavaScript
+Simulação de um carrinho de compras com funcionalidades inspiradas na plataforma Shopee. O projeto tem como objetivo **reforçar conceitos de arrays, funções, promessas (Promises) e manipulação de dados em JavaScript**, utilizando práticas modernas e exemplos próximos ao mundo real.
 
-item:
-// o await é usado para esperar a resolução de uma Promise
-// como o item ainda nao foi adicionado ao carrinho, não é necessário usar await aqui
-// ele tenta fazer tudo de forma síncrona por isso o await serve para fazer a função esperar
-// ele tenta fazer tudo de uma vez, por isso o await é usado para esperar a resolução de uma Promise
-// Caso eu queira criar uma lista de desejos, eu poderia usar o mesmo serviço de itens
-// usando o mesmo createItem, mas com uma lista de desejos diferente *cartService.addItemToCart(Wishlist,item);*
-// criando uma const para armazenar itens na lista de desejos
+---
 
+## 🎯 Objetivo
 
+- Adicionar e remover **itens de compra**
+- Gerenciar um **carrinho com itens escolhidos**
+- Trabalhar com **listas**, **funções auxiliares** e **operações comuns com arrays**
+
+---
+
+## 🧠 Anotações de Estudo
+
+Este projeto foi criado com foco em aprendizado. Abaixo estão alguns conceitos importantes usados durante o desenvolvimento:
+
+### 📌 Operações com Arrays
+
+- `push` – Adiciona um item ao **final** do array
+- `shift` – Remove o **primeiro** item do array
+- `pop` – Remove o **último** item do array
+- `reduce` – Reduz um array a um único valor (ex: total do carrinho)
+- `indexOf` – Retorna o **índice** de um item no array
+- `splice` – Remove um ou mais itens do array por índice
+- `findIndex` – Encontra o **índice** de um item com base em uma condição
+- `forEach` – Percorre cada item do array
+
+### 🧮 Trabalhando com valores
+
+- O `0` como argumento inicial em `reduce` define o valor de partida da operação (ex: total = 0)
+- Template strings com `${}` permitem embutir variáveis e expressões diretamente no texto
+
+### ⏳ Promessas e `async/await`
+
+- `await` é usado para aguardar a resolução de uma Promise antes de continuar
+- Se a operação não depende de uma promessa, **não é necessário usar `await`**
+- Para usar `await`, a função deve ser marcada como `async`
+
+---
+
+## 💡 Possível expansão
+
+- Criar uma **lista de desejos** (wishlist) usando a mesma lógica do carrinho:
+```js
+cartService.addItemToCart(Wishlist, item);
