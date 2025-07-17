@@ -23,7 +23,8 @@ Este repositório contém a entrega do desafio de projeto da DIO, conforme orien
 
    * Estruturação do repositório.
    * Criação no GitHub:
-     👉 https://github.com/digitalinnovationone/formacao-nodejs/tree/main/03-projeto-mario-kart
+     👉 https://github.com/digitalinnovationone/formacao-nodejs
+    
 
 4. **Execução**
 
